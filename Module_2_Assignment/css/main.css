@@ -1,0 +1,91 @@
+* { box-sizing: border-box; }
+ 
+ body {
+ 		font-family: arial;
+ 		}
+
+ h1 {
+ 	text-align: center;
+ 	font-size: 1.75rem;
+ }
+ .title {
+ 	position: absolute;
+ 	top: 0;
+ 	right: 0;
+ 	border: 1px solid black;
+ 	font-size: 1.5rem;
+ 	padding-right: 5px;
+ 	padding-left: 5px;
+ 	margin-bottom: 10px;
+ }
+
+
+ #section1, #section2, #section3 {
+ 
+ 	padding: 12px;
+
+ }
+
+ #section1 .content, #section2 .content, #section3 .content {
+ 	font-size: 1rem;
+ 	background-color: grey; 
+ 	position: relative;
+ 	border:1px solid black;
+ 	padding-top: 20px;
+ 	padding-left: 14px;
+
+
+
+ }
+ 
+#section1 .title {
+	background-color: #00FFEE;
+	width:120px;
+	text-align: center;
+
+}
+
+#section2 .title {
+	background-color: red;
+	width:120px;
+	text-align: center;
+}
+
+#section3 .title {
+	background-color: orange;
+	width:120px;
+	text-align: center;
+}
+
+/* Large screen: Desktop  */
+@media only screen and (min-width: 992px) {
+	#section1, #section2, #section3 {
+		display: inline-block;
+		width: 33%;
+	} 
+}
+
+/*Medium Screen:tablet*/
+@media only screen and (min-width:768px) and (max-width: 991px) {
+	#section1, #section2, #section3 {
+		display: inline-block;
+	} 
+
+	#section1, #section2 {
+		width: 49.7%;
+	}
+
+	#section3 {
+		width: 100%;
+	}
+
+}
+
+/*Small screen: Mobile*/
+@media only screen and (max-width: 767px) {
+	#section1, #section2, #section3 {
+		display: inline-block;
+		width: 100%;
+	} 
+
+}
